@@ -1,0 +1,77 @@
+img.uk-cover {
+  max-height: 971px;
+}
+
+h2.heading-slider {
+  font-size: 6vw;
+  color: white;
+  font-family: "Franklin Gothic Heavy";
+  color: transparent;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: white;
+  text-align: left;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+p.subheading-slider {
+  font-size: 6vw;
+  color: #ffffff;
+  font-family: "Franklin Gothic Heavy";
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+div.description-content {
+  width: 20vw;
+  margin-left: 10px;
+  padding: 0;
+  text-align: left;
+  font-size: 1vw;
+  line-height: 2vw;
+  color: #ffffff;
+  font-family: "Franklin Gothic Book";
+}
+
+div.description-line {
+  width: 5vw;
+  border-top: 1px solid white;
+  line-height: 0.1em;
+  margin-top: 1vw;
+  margin-right: 2vw;
+}
+
+div.button {
+  background-color: #ff5b46;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+
+div.button:hover {
+  background-color: #fb4229;
+}
+
+div.box.uk-margin-small-top {
+  position: relative;
+  margin-left: 8vw;
+}
+
+div.link {
+  font-family: "Franklin Gothic Demo";
+  font-size: 1vw;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-46%, -50%);
+          transform: translate(-46%, -50%);
+}
+
+div.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
