@@ -1,43 +1,7 @@
-// img.uk-cover {
-//     max-height: 971px;
-// }
-
-// .uk-position-small.uk-position-center {
-//     top: 30%;
-//     left: 30%;
-// }
-
-// h2 {
-//     font-size: 110px;
-//     line-height: 171px;
-//     color: transparent;
-//     font-family: "Franklin Gothic";
-//     /* border: 1px solid rgba(255,255,255,0.6); */
-// }
-
-// p {
-//     font-size: 110px;
-//     line-height: 171px;
-//     color: #ffffff;
-//     font-family: "Franklin Gothic";
-// }
-
-// h2 {
-//     color: white;
-//     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-// }
-
 // Slider "urodzeni aby wygrywać"
 img.uk-cover {
     max-height: 971px;
 }
-
-// .uk-position-small.uk-position-center {
-// top: 40%;
-// left: 30%;
-// margin: 0;
-// padding: 0;
-// }
 
 h2.heading-slider {
     // font-size: 110px;
@@ -82,22 +46,10 @@ div.description-line {
     margin-right: 2vw;
 }
 div.button {
-    // position:relative;
     background-color:#ff5b46;
-      // padding: 20px;
-    // text-align: center;
-    // text-decoration: none;
-    // display: inline-block;
-    // font-size: 16px;
-    // margin: 4px 2px;
-    // cursor: pointer;
-    // border-radius: 50%;
-    // shape-outside: inset(20px 5px 30px 10px);
-    // float: left;
     width: 3vw;
     height: 3vw;
     border-radius:50%;
-    // shape-outside: inset(12px 10px 30px 50px);
     &:hover{
        background-color:#fb4229;
     }
