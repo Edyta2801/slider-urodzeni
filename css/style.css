@@ -1,77 +1,58 @@
-img.uk-cover {
-  max-height: 971px;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-h2.heading-slider {
-  font-size: 6vw;
-  color: white;
-  font-family: "Franklin Gothic Heavy";
-  color: transparent;
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: white;
-  text-align: left;
-  font-weight: bolder;
-  padding: 0;
+body {
   margin: 0;
+  font-family: Arial;
 }
 
-p.subheading-slider {
-  font-size: 6vw;
-  color: #ffffff;
-  font-family: "Franklin Gothic Heavy";
-  font-weight: bolder;
-  margin: 0;
-  padding: 0;
+.header {
+  text-align: center;
+  padding: 32px;
 }
 
-div.description-content {
-  width: 20vw;
-  margin-left: 10px;
-  padding: 0;
-  text-align: left;
-  font-size: 1vw;
-  line-height: 2vw;
-  color: #ffffff;
-  font-family: "Franklin Gothic Book";
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-div.description-line {
-  width: 5vw;
-  border-top: 1px solid white;
-  line-height: 0.1em;
-  margin-top: 1vw;
-  margin-right: 2vw;
+/* Create four equal columns that sits next to each other */
+.column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
 }
 
-div.button {
-  background-color: #ff5b46;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 50%;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
-div.button:hover {
-  background-color: #fb4229;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
 }
 
-div.box.uk-margin-small-top {
-  position: relative;
-  margin-left: 8vw;
-}
-
-div.link {
-  font-family: "Franklin Gothic Demo";
-  font-size: 1vw;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-46%, -50%);
-          transform: translate(-46%, -50%);
-}
-
-div.link:hover {
-  text-decoration: underline;
-  cursor: pointer;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
