@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <title>slider</title>
+</head>
+
+<body>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="1.jpg" alt="" uk-cover>
+                <div class="uk-position-center-left uk-margin-xlarge-left">
+                    <h2 class="heading-slider" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">urodzeni</h2>
+                    <p class="subheading-slider" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">aby wygrywać</p>
+                    <div class="uk-flex uk-text-top uk-margin-large-top">
+                        <div class="description-line"></div>
+                        <div class="description-content uk-text-top">W zaprezentowanym cyklu felietonów o największych
+                            postaciach polskiego olimpizu, prezdstawiamy Państwu sylwetki polskich sportowców oraz ich
+                            osiągnięcia, które towarzyszą nam od początku wyzwań sportowych na całym świecie. </div>
+                    </div>
+                    <div class="box uk-margin-small-top">
+                        <div class="button " href="#"></div>
+                        <div class="link" href="#">Dowiedz się więcej</div>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img src="2.jpg" alt="" uk-cover>
+                <div class="uk-position-center-left uk-margin-xlarge-left">
+                    <h2 class="heading-slider" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">urodzeni</h2>
+                    <p class="subheading-slider" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">aby wygrywać</p>
+                    <div class="uk-flex uk-text-top uk-margin-large-top">
+                        <div class="description-line"></div>
+                        <div class="description-content uk-text-top">W zaprezentowanym cyklu felietonów o największych
+                            postaciach polskiego olimpizu, prezdstawiamy Państwu sylwetki polskich sportowców oraz ich
+                            osiągnięcia, które towarzyszą nam od początku wyzwań sportowych na całym świecie.</div>
+                    </div>
+                    <div class="box">
+                        <button class="circle" href="#"></button>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img src="3.jpg" alt="" uk-cover>
+                <div class="uk-position-center-left uk-margin-xlarge-left">
+                    <h2 class="heading-slider" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">urodzeni</h2>
+                    <p class="subheading-slider" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">aby wygrywać</p>
+                    <div class="uk-flex uk-text-top uk-margin-large-top">
+                        <div class="description-line"></div>
+                        <div class="description-content uk-text-top">W zaprezentowanym cyklu felietonów o największych
+                            postaciach polskiego olimpizu, prezdstawiamy Państwu sylwetki polskich sportowców oraz ich
+                            osiągnięcia, które towarzyszą nam od początku wyzwań sportowych na całym świecie.</div>
+                    </div>
+                    <div class="box">
+                        <button class="shape" href="#"></button>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+
+    </div>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+        <ul class="uk-slideshow-items">
+            {{#each slider_content}}
+            <li>
+                <img src="{{image.url}}" alt="{{image.alt}}" uk-cover>
+                <!--<div class="uk-position-center uk-position-small uk-text-center">-->
+                <div class="uk-position-center-left uk-margin-xlarge-left">
+                    <h2 class="heading-slider" uk-slideshow-parallax="x: 100,-100">{{heading}}</h2>
+                    <p class="subheading-slider" uk-slideshow-parallax="x: 200,-200">{{subheading}}</p>
+                    <div class="uk-flex uk-text-top uk-margin-large-top">
+                        <div class="description-line"></div>
+                        <div class="description-content uk-text-top">{{description}}</div>
+                    </div>
+                    <!-- <button class="uk-button uk-button-link uk-margin-large-left uk-margin-medium-top" href="#"></button>-->
+                    <!--<span><a class="uk-link-heading" href="#">Dowiedz się więcej</a></span>-->
+                    <div class="box">
+                        <button class="shape" href="#"></button>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+
+                </div>
+            </li>
+            {{/each}}
+
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+    </div>
+</body>
+
+</html>

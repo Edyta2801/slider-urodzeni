@@ -73,18 +73,19 @@
 // }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial;
+    margin: 0;
+    font-family: Arial;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  // padding: 0 27px;
+    display: flex;
+    flex-wrap: wrap;
+    // padding: 0 27px;
+    // align-items: center;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -101,108 +102,132 @@ body {
 // }
 
 .column-1 {
-  flex: 1;
-  max-width: 440px;
-  padding: 0 27px;
-  max-height: 800px;
-  .one {
-    min-height: 800px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
+    flex: 1;
+    max-width: 440px;
+    // padding: 0 27px;
+    max-height: 800px;
+    padding-right: 27px;
+    .one {
+        min-height: 800px;
+        vertical-align: middle;
+        object-fit: cover;
+    }
 }
 
 .column-2 {
-  flex: 2;
-  max-width: 891px;
-  max-height: 800px;
-  margin: 0;
-  .two {
-    max-height: 440px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-  .three {
-    padding-top: 27px;
-    max-height: 360px;
-    vertical-align: middle;
-  }
-}
-
-// @media (max-width: 1024px) {
-//   .column-1 {
-//     flex: 100%;
-//     max-width: 100%;
-//   }
-//   .column-2 {
-//     flex: 100%;
-//     max-width: 100%;
-//   }
-// }
-
-@media (max-width: 760px) {
-  .column-1 {
-    flex: 100%;
-    max-height: 467px;
-    // max-width:760px;
-  
- 
-    .one {
-      min-width: 440px;
-      max-height: 330px;
-      min-height: 0;
-      object-fit: cover;
-      
-    }
-  }
-  .column-2 {
-    flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    margin-top:27px;
-   
+    flex: 2;
+    max-width: 891px;
+    max-height: 800px;
+    margin: 0;
     .two {
-      // max-width: 440px;
-      min-height: 330px;
-      object-fit: cover;
+        max-height: 440px;
+        vertical-align: middle;
+        object-fit: cover;
     }
     .three {
-      // max-width: 440px;
-      min-height: 330px;
-      object-fit: cover;
+        padding-top: 27px;
+        max-height: 360px;
+        vertical-align: middle;
     }
-  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+    .column-1 {
+        flex: 1;
+        max-width: 440px;
+        padding-right: 27px;
+        max-height: 800px;
+        min-height: 555px;
+        .one {
+            // min-height: 555px;
+            vertical-align: middle;
+            object-fit: cover;
+            // max-height: 800px;
+            height: 100%;
+        }
+    }
+    .column-2 {
+        flex: 2;
+        max-width: 891px;
+        max-height: 800px;
+        margin: 0;
+        .two {
+        //    height: 440px;
+            vertical-align: middle;
+            object-fit: cover;
+            height: 60%;
+        }
+        .three {
+            // padding-top: 27px;
+            // max-height: 360px;
+            vertical-align: middle;
+            object-fit: cover;
+            height: 40%;
+        }
+    }
+}
+@media screen and (max-width: 760px) and (min-width: 551px) {
+    .column-1 {
+        flex: 100%;
+        max-height: 467px;
+        max-width: 760px;
+        padding: 0 27px;
+        .one {
+            min-width: 440px;
+            max-height: 330px;
+            min-height: 0;
+            object-fit: cover;
+        }
+    }
+    .column-2 {
+        flex: 100%;
+        max-height: 467px;
+        padding: 0 27px;
+        margin-top: 27px;
+
+        .two {
+            // max-width: 440px;
+            min-height: 330px;
+            object-fit: cover;
+        }
+        .three {
+            // max-width: 440px;
+            min-height: 330px;
+            object-fit: cover;
+        }
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 550px) {
-  .column-1 {
-    flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    // max-width: 440px;
-    .one {
-      max-width: 440px;
-      max-height: 330px;
-      min-height: 0;
-      object-fit: cover;
+
+@media screen and (max-width: 550px) {
+    .column-1 {
+        flex: 100%;
+        max-height: 467px;
+        padding: 0 27px;
+        max-width: 550px;
+        .one {
+            // min-width: 440px;
+            max-height: 330px;
+            min-height: 0;
+            object-fit: cover;
+        }
     }
-  }
-  .column-2 {
-    flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    margin-top: 27px;
-    .two {
-      max-width: 440px;
-      min-height: 330px;
-      object-fit: cover;
+    .column-2 {
+        flex: 100%;
+        max-height: 467px;
+        padding: 0 27px;
+        margin-top: 27px;
+        .two {
+            // max-width: 440px;
+            min-height: 330px;
+            object-fit: cover;
+        }
+        .three {
+            // max-width: 440px;
+            min-height: 330px;
+            object-fit: cover;
+            // margin-top:27px;
+        }
     }
-    .three {
-      // max-width: 440px;
-      min-height: 330px;
-      object-fit: cover;
-      // margin-top:27px;
-    }
-  }
 }
