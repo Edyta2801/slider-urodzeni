@@ -8,51 +8,121 @@ body {
   font-family: Arial;
 }
 
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
+.column-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 440px;
+  padding: 0 27px;
+  max-height: 800px;
 }
 
-.column img {
-  margin-top: 8px;
+.column-1 .one {
+  min-height: 800px;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.column-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  max-width: 891px;
+  max-height: 800px;
+  margin: 0;
+}
+
+.column-2 .two {
+  max-height: 440px;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.column-2 .three {
+  padding-top: 27px;
+  max-height: 360px;
   vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
+@media (max-width: 760px) {
+  .column-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+  }
+  .column-1 .one {
+    min-width: 440px;
+    max-height: 330px;
+    min-height: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+    margin-top: 27px;
+  }
+  .column-2 .two {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 .three {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
+@media (max-width: 550px) {
+  .column-1 {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    max-width: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+  }
+  .column-1 .one {
+    max-width: 440px;
+    max-height: 330px;
+    min-height: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+    margin-top: 27px;
+  }
+  .column-2 .two {
+    max-width: 440px;
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 .three {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
