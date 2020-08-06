@@ -27,10 +27,15 @@ body {
 }
 
 .column-1 .one {
-  min-height: 800px;
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .column-1 .one {
+    min-height: -webkit-fill-available;
+  }
 }
 
 .column-2 {

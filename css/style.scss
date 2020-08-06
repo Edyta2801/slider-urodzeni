@@ -1,39 +1,39 @@
 /// Slider "urodzeni aby wygrywać"
 // @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-// $bp-small: 550px;
-// $bp-medium: 760px;
-// $bp-desktop: 1024px;
-// $bp-wide: 1680px;
+$bp-small: 550px;
+$bp-medium: 760px;
+$bp-desktop: 1024px;
+$bp-wide: 1680px;
 
-// $color-main: #ff5b46;
-// $color-menu-text: #6d6d6d;
+$color-main: #ff5b46;
+$color-menu-text: #6d6d6d;
 
-// @mixin res($breakpoint) {
-//     @if $breakpoint==wide {
-//         @media screen and (min-width: $bp-wide) {
-//             @content;
-//         }
-//     }
+@mixin res($breakpoint) {
+    @if $breakpoint==wide {
+        @media screen and (min-width: $bp-wide) {
+            @content;
+        }
+    }
 
-//     @if $breakpoint==desktop {
-//         @media screen and (min-width: $bp-desktop) {
-//             @content;
-//         }
-//     }
+    @if $breakpoint==desktop {
+        @media screen and (min-width: $bp-desktop) {
+            @content;
+        }
+    }
 
-//     @if $breakpoint==tab {
-//         @media screen and (min-width: $bp-medium) {
-//             @content;
-//         }
-//     }
+    @if $breakpoint==tab {
+        @media screen and (min-width: $bp-medium) {
+            @content;
+        }
+    }
 
-//     @if $breakpoint==phone {
-//         @media screen and (min-width: $bp-small) {
-//             @content;
-//         }
-//     }
-// }
+    @if $breakpoint==phone {
+        @media screen and (min-width: $bp-small) {
+            @content;
+        }
+    }
+}
 // .uk-position-center-left.uk-margin-xlarge-left {
 //     top: 20%;
 //     left: 15%;
@@ -260,9 +260,13 @@ body {
     max-height: 800px;
     padding-right: 27px;
     .one {
-        min-height: 800px;
+        // min-height: 800px;
         vertical-align: middle;
         object-fit: cover;
+        // min-height: -webkit-fill-available;
+        @include res(desktop) {
+            min-height: -webkit-fill-available;
+        }
     }
 }
 
@@ -296,6 +300,7 @@ body {
             object-fit: cover;
             // max-height: 800px;
             height: 100%;
+            // min-height: -webkit-fill-available;
         }
     }
     .column-2 {
