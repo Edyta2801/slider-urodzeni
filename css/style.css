@@ -1,227 +1,167 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.uk-position-center-left.uk-margin-xlarge-left {
-  top: 20%;
-  left: 15%;
-  margin-left: 0 !important;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@media screen and (min-width: 760px) {
-  .uk-position-center-left.uk-margin-xlarge-left {
-    margin-left: 10vw !important;
-    top: 50%;
-    left: 0;
-  }
-}
-
-.uk-margin-medium-top {
-  margin-top: 50px !important;
-}
-
-.uk-margin-large-top {
-  margin-top: 15px !important;
-}
-
-@media screen and (min-width: 760px) {
-  .uk-margin-large-top {
-    margin-top: 40px !important;
-  }
-}
-
-.uk-slideshow-items {
-  min-height: 640px !important;
-}
-
-@media screen and (min-width: 1024px) {
-  .uk-slideshow-items {
-    min-height: 940px !important;
-  }
-}
-
-.uk-flex.uk-text-top.uk-margin-large-top {
-  display: none;
-}
-
-@media screen and (min-width: 760px) {
-  .uk-flex.uk-text-top.uk-margin-large-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-h2.heading-slider {
-  font-size: 9vw;
-  font-family: "Franklin Gothic Heavy";
-  color: transparent !important;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: white;
-  text-align: center;
-  font-weight: 900;
-  padding: 0;
+body {
   margin: 0;
-  line-height: 1.3;
-  letter-spacing: 1px;
+  font-family: Arial;
 }
 
-@media screen and (min-width: 760px) {
-  h2.heading-slider {
-    text-align: left;
-    font-size: 6.3vw;
-    text-align: left;
-  }
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-h2.subheading-slider {
-  font-size: 9vw;
-  color: #ffffff;
-  font-family: "Franklin Gothic Heavy";
-  font-weight: 900;
+/* Create four equal columns that sits next to each other */
+.column-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 440px;
+  max-height: 800px;
+  padding-right: 27px;
+}
+
+.column-1 .one {
+  min-height: 800px;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.column-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  max-width: 891px;
+  max-height: 800px;
   margin: 0;
-  padding: 0;
-  line-height: 1;
-  text-align: center;
 }
 
-@media screen and (min-width: 760px) {
-  h2.subheading-slider {
-    text-align: left;
-    line-height: 1;
-    font-size: 6.3vw;
-    text-align: left;
+.column-2 .two {
+  max-height: 440px;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.column-2 .three {
+  padding-top: 27px;
+  max-height: 360px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .column-1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 440px;
+    padding-right: 27px;
+    max-height: 800px;
+    min-height: 555px;
+  }
+  .column-1 .one {
+    vertical-align: middle;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .column-2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    max-width: 891px;
+    max-height: 800px;
+    margin: 0;
+  }
+  .column-2 .two {
+    vertical-align: middle;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 60%;
+  }
+  .column-2 .three {
+    vertical-align: middle;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 40%;
   }
 }
 
-div.description-content {
-  width: 20vw;
-  margin-left: 10px;
-  padding: 0;
-  text-align: left;
-  font-size: 1vw;
-  line-height: 1.6;
-  color: #ffffff;
-  font-family: "Franklin Gothic Book";
-}
-
-div.description-line {
-  visibility: visible;
-  width: 5vw;
-  border-top: 1px solid white;
-  line-height: 0.1em;
-  margin-top: 1vw;
-  margin-right: 2vw;
-}
-
-.wrapper.uk-margin-medium-top {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-left: 8vw;
-}
-
-a.circle-button {
-  display: block;
-  height: 40px;
-  line-height: 60px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  position: relative;
-  -webkit-transition: width 0.5s ease;
-  transition: width 0.5s ease;
-}
-
-a span.button-link {
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 57%;
-  text-align: left;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 1024px) {
-  a span.button-link {
-    top: 50%;
-    left: 57%;
+@media screen and (max-width: 760px) and (min-width: 551px) {
+  .column-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    max-width: 760px;
+    padding: 0 27px;
+  }
+  .column-1 .one {
+    min-width: 440px;
+    max-height: 330px;
+    min-height: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+    margin-top: 27px;
+  }
+  .column-2 .two {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .column-2 .three {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
-@media screen and (min-width: 1680px) {
-  a span.button-link {
-    top: 70%;
-    left: 55%;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 550px) {
+  .column-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+    max-width: 550px;
   }
-}
-
-a.circle-button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background: #fb4229;
-  -webkit-transition: width 0.5s ease;
-  transition: width 0.5s ease;
-}
-
-@media screen and (min-width: 1024px) {
-  a.circle-button:after {
-    width: 50px;
-    height: 50px;
-    border-radius: 55px;
+  .column-1 .one {
+    max-height: 330px;
+    min-height: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-}
-
-@media screen and (min-width: 1680px) {
-  a.circle-button:after {
-    width: 65px;
-    height: 65px;
-    border-radius: 60px;
+  .column-2 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-height: 467px;
+    padding: 0 27px;
+    margin-top: 27px;
   }
-}
-
-a.circle-button:hover:after {
-  width: 160px;
-  border-radius: 50px;
-}
-
-@media screen and (min-width: 760px) {
-  a.circle-button:hover:after {
-    width: 15vw;
-    border-radius: 50px;
+  .column-2 .two {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-}
-
-@media screen and (min-width: 1024px) {
-  a.circle-button:hover:after {
-    width: 14.5vw;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  a.circle-button:hover:after {
-    width: 13.5vw;
-  }
-}
-
-span.button-link {
-  font-family: "Franklin Gothic Demo";
-  font-size: 14px;
-  margin-left: 0;
-}
-
-@media screen and (min-width: 760px) {
-  span.button-link {
-    font-size: 1.3vw;
+  .column-2 .three {
+    min-height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
