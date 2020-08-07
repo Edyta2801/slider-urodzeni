@@ -14,6 +14,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -24,18 +25,55 @@ body {
   max-width: 440px;
   max-height: 800px;
   padding-right: 27px;
+  position: relative;
 }
 
 .column-1 .one {
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  padding-right: 27px;
+}
+
+.column-1 .one:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
+          box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
 }
 
 @media screen and (min-width: 1024px) {
   .column-1 .one {
     min-height: -webkit-fill-available;
   }
+}
+
+.column-1 .one .text-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 19px;
+}
+
+.column-1 .one .text-box:hover {
+  font-size: 21px;
+}
+
+.column-1 .transparent-box {
+  opacity: 0.5;
+  background: #ff5a46;
+  width: 94%;
+  height: 55%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.column-1 .transparent-box:hover {
+  height: 100%;
 }
 
 .column-2 {
@@ -168,18 +206,5 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
-}
-
-.transparent-box {
-  opacity: 0.3;
-  background: #33d9b2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 250px;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */

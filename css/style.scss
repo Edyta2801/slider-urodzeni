@@ -57,7 +57,6 @@ $color-menu-text: #6d6d6d;
 
 // .uk-slideshow-items {
 //     min-height: 640px !important;
-    
 
 //     @include res(desktop) {
 //         min-height: 940px !important;
@@ -106,7 +105,6 @@ $color-menu-text: #6d6d6d;
 //         font-size: 6.3vw;
 //         text-align: left;
 //     }
-
 
 // }
 
@@ -159,7 +157,7 @@ $color-menu-text: #6d6d6d;
 //     left: 57%;
 //     text-align: left;
 //     transform: translate(-50%, -50%);
-    
+
 //     @include res(desktop) {
 //         top: 50%;
 //         left: 57%;
@@ -220,8 +218,6 @@ $color-menu-text: #6d6d6d;
 //     }
 // }
 
-
-
 // style centrum olimpijskie
 
 * {
@@ -236,6 +232,8 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+    // justify-content: space-between;
+    position: relative;
     // padding: 0 27px;
     // align-items: center;
 }
@@ -259,17 +257,76 @@ body {
     // padding: 0 27px;
     max-height: 800px;
     padding-right: 27px;
+    position: relative;
+    // z-index: 1;
+    // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
+
     .one {
         // min-height: 800px;
         vertical-align: middle;
         object-fit: cover;
-        // min-height: -webkit-fill-available;
+        position: absolute;
+        padding-right: 27px;
+        // z-index: 1;
+        // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
+
+        //     object-fit: cover;
+        //     box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.8);
+        //     background: var(background-image) center center;
+        //     background-size: cover;
+        //     color: white;
+        //     min-height: 30vh;
+        //     /* width: 100%;
+        // height: 300px;
+        // object-fit: cover; */
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     // transition: box-shadow 0.2s ease-out;
+        //     z-index: 1;
+
+        &:hover {
+            box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
+        }
+
         @include res(desktop) {
             min-height: -webkit-fill-available;
         }
+
+        .text-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            // background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 19px;
+            &:hover {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .transparent-box {
+        opacity: 0.5;
+        background: #ff5a46;
+        width: 94%;
+        height: 55%;
+        position: absolute;
+        top: 0;
+
+        // max-width: 250px;
+        transition: all 1s;
+        // transition: linear 1s;
+        // &:hover {
+        //     height: 100%;
+        // }
+        &:hover {
+            height: 100%;
+        }
     }
 }
-
 .column-2 {
     flex: 2;
     max-width: 891px;
@@ -294,6 +351,7 @@ body {
         padding-right: 27px;
         max-height: 800px;
         min-height: 555px;
+
         .one {
             // min-height: 555px;
             vertical-align: middle;
@@ -309,7 +367,7 @@ body {
         max-height: 800px;
         margin: 0;
         .two {
-        //    height: 440px;
+            //    height: 440px;
             vertical-align: middle;
             object-fit: cover;
             height: 60%;
@@ -391,16 +449,3 @@ body {
 
 // // https://tobiasahlin.com/blog/common-flexbox-patterns/
 // // https://dzone.com/articles/detail-beginner-guide-for-css-flexbox-with-example
-
-
-.transparent-box {
-    opacity: 0.3;
-    background: #33d9b2;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    max-width: 250px;
-    transition: 1s;
-}
