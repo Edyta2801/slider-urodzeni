@@ -220,232 +220,259 @@ $color-menu-text: #6d6d6d;
 
 // style centrum olimpijskie
 
-* {
-    box-sizing: border-box;
-}
+// * {
+//     box-sizing: border-box;
+// }
 
-body {
-    margin: 0;
-    font-family: Arial;
-}
+// body {
+//     margin: 0;
+//     font-family: Arial;
+// }
+
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     // justify-content: space-between;
+//     position: relative;
+//     // padding: 0 27px;
+//     // align-items: center;
+// }
+
+// /* Create four equal columns that sits next to each other */
+// // .column {
+// //   flex: 50%;
+// //   max-width: 50%;
+// //   padding: 0 4px;
+// // }
+
+// // .column img {
+// // margin-top: 27px;
+// // vertical-align: middle;
+// // object-fit:cover;
+// // }
+
+// .column-1 {
+//     flex: 1;
+//     max-width: 440px;
+//     // padding: 0 27px;
+//     max-height: 800px;
+//     padding-right: 27px;
+//     position: relative;
+//     // z-index: 1;
+//     // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
+
+//     .one {
+//         // min-height: 800px;
+//         vertical-align: middle;
+//         object-fit: cover;
+//         position: absolute;
+//         padding-right: 27px;
+//         // z-index: 1;
+//         // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
+
+//         //     object-fit: cover;
+//         //     box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.8);
+//         //     background: var(background-image) center center;
+//         //     background-size: cover;
+//         //     color: white;
+//         //     min-height: 30vh;
+//         //     /* width: 100%;
+//         // height: 300px;
+//         // object-fit: cover; */
+//         //     display: flex;
+//         //     align-items: center;
+//         //     justify-content: center;
+//         //     // transition: box-shadow 0.2s ease-out;
+//         //     z-index: 1;
+
+//         &:hover {
+//             box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
+//         }
+
+//         .text-box {
+//             position: absolute;
+//             top: 20px;
+//             left: 20px;
+//             // background-color: black;
+//             color: white;
+//             padding-left: 20px;
+//             padding-right: 20px;
+//             font-size: 19px;
+//             &:hover {
+//                 font-size: 21px;
+//                 color: white;
+//             }
+//         }
+//         @include res(desktop) {
+//             min-height: -webkit-fill-available;
+//         }
+//     }
+
+//     .transparent-box {
+//         opacity: 0.5;
+//         background: #ff5a46;
+//         width: 94%;
+//         height: 55%;
+//         position: absolute;
+//         top: 0;
+
+//         // max-width: 250px;
+//         transition: all 1s;
+//         // transition: linear 1s;
+//         // &:hover {
+//         //     height: 100%;
+//         // }
+//         &:hover {
+//             height: 100%;
+//         }
+//     }
+// }
+// .column-2 {
+//     flex: 2;
+//     max-width: 891px;
+//     max-height: 800px;
+//     margin: 0;
+//     .two {
+//         max-height: 440px;
+//         vertical-align: middle;
+//         object-fit: cover;
+//     }
+//     .three {
+//         padding-top: 27px;
+//         max-height: 360px;
+//         vertical-align: middle;
+//     }
+// }
+
+// @media screen and (max-width: 1024px) and (min-width: 761px) {
+//     .column-1 {
+//         flex: 1;
+//         max-width: 440px;
+//         padding-right: 27px;
+//         max-height: 800px;
+//         min-height: 555px;
+
+//         .one {
+//             // min-height: 555px;
+//             vertical-align: middle;
+//             object-fit: cover;
+//             // max-height: 800px;
+//             height: 100%;
+//             // min-height: -webkit-fill-available;
+//         }
+//     }
+//     .column-2 {
+//         flex: 2;
+//         max-width: 891px;
+//         max-height: 800px;
+//         margin: 0;
+//         .two {
+//             //    height: 440px;
+//             vertical-align: middle;
+//             object-fit: cover;
+//             height: 60%;
+//         }
+//         .three {
+//             // padding-top: 27px;
+//             // max-height: 360px;
+//             vertical-align: middle;
+//             object-fit: cover;
+//             height: 40%;
+//         }
+//     }
+// }
+// @media screen and (max-width: 760px) and (min-width: 551px) {
+//     .column-1 {
+//         flex: 100%;
+//         max-height: 467px;
+//         max-width: 760px;
+//         padding: 0 27px;
+//         .one {
+//             min-width: 440px;
+//             max-height: 330px;
+//             min-height: 0;
+//             object-fit: cover;
+//         }
+//     }
+//     .column-2 {
+//         flex: 100%;
+//         max-height: 467px;
+//         padding: 0 27px;
+//         margin-top: 27px;
+
+//         .two {
+//             // max-width: 440px;
+//             min-height: 330px;
+//             object-fit: cover;
+//         }
+//         .three {
+//             // max-width: 440px;
+//             min-height: 330px;
+//             object-fit: cover;
+//         }
+//     }
+// }
+
+// /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+// @media screen and (max-width: 550px) {
+//     .column-1 {
+//         flex: 100%;
+//         max-height: 467px;
+//         padding: 0 27px;
+//         max-width: 550px;
+//         .one {
+//             // min-width: 440px;
+//             max-height: 330px;
+//             min-height: 0;
+//             object-fit: cover;
+//         }
+//     }
+//     .column-2 {
+//         flex: 100%;
+//         max-height: 467px;
+//         padding: 0 27px;
+//         margin-top: 27px;
+//         .two {
+//             // max-width: 440px;
+//             min-height: 330px;
+//             object-fit: cover;
+//         }
+//         .three {
+//             // max-width: 440px;
+//             min-height: 330px;
+//             object-fit: cover;
+//             // margin-top:27px;
+//         }
+//     }
+// }
+
+// // https://tobiasahlin.com/blog/common-flexbox-patterns/
+// // https://dzone.com/articles/detail-beginner-guide-for-css-flexbox-with-example
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    position: relative;
-    // padding: 0 27px;
-    // align-items: center;
-}
+    width:100%;
+    height:842px ;
 
-/* Create four equal columns that sits next to each other */
-// .column {
-//   flex: 50%;
-//   max-width: 50%;
-//   padding: 0 4px;
-// }
-
-// .column img {
-// margin-top: 27px;
-// vertical-align: middle;
-// object-fit:cover;
-// }
-
-.column-1 {
-    flex: 1;
-    max-width: 440px;
-    // padding: 0 27px;
-    max-height: 800px;
-    padding-right: 27px;
-    position: relative;
-    // z-index: 1;
-    // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
-
-    .one {
-        // min-height: 800px;
-        vertical-align: middle;
-        object-fit: cover;
-        position: absolute;
-        padding-right: 27px;
-        // z-index: 1;
-        // background-image: linear-gradient(90deg, #ff5a46 50%, transparent 50%);
-
-        //     object-fit: cover;
-        //     box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.8);
-        //     background: var(background-image) center center;
-        //     background-size: cover;
-        //     color: white;
-        //     min-height: 30vh;
-        //     /* width: 100%;
-        // height: 300px;
-        // object-fit: cover; */
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     // transition: box-shadow 0.2s ease-out;
-        //     z-index: 1;
-
-        &:hover {
-            box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
-        }
-
-        @include res(desktop) {
-            min-height: -webkit-fill-available;
-        }
-
-        .text-box {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            // background-color: black;
-            color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 19px;
-            &:hover {
-                font-size: 21px;
-            }
-        }
+    @include res(tab) {
+        flex-wrap: nowrap;
     }
-
-    .transparent-box {
-        opacity: 0.5;
-        background: #ff5a46;
-        width: 94%;
-        height: 55%;
-        position: absolute;
-        top: 0;
-
-        // max-width: 250px;
-        transition: all 1s;
-        // transition: linear 1s;
-        // &:hover {
-        //     height: 100%;
-        // }
-        &:hover {
-            height: 100%;
-        }
+}
+.column-1 {
+    flex-basis:494px;
+    height:842px;
+    justify-content: center;
+    align-items: center;
+    flex:min-content;
+    @include res(tab) {
+        flex: 1;
     }
 }
 .column-2 {
-    flex: 2;
-    max-width: 891px;
-    max-height: 800px;
-    margin: 0;
-    .two {
-        max-height: 440px;
-        vertical-align: middle;
-        object-fit: cover;
-    }
-    .three {
-        padding-top: 27px;
-        max-height: 360px;
-        vertical-align: middle;
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 761px) {
-    .column-1 {
-        flex: 1;
-        max-width: 440px;
-        padding-right: 27px;
-        max-height: 800px;
-        min-height: 555px;
-
-        .one {
-            // min-height: 555px;
-            vertical-align: middle;
-            object-fit: cover;
-            // max-height: 800px;
-            height: 100%;
-            // min-height: -webkit-fill-available;
-        }
-    }
-    .column-2 {
+    // flex: 0;
+    @include res(tab) {
         flex: 2;
-        max-width: 891px;
-        max-height: 800px;
-        margin: 0;
-        .two {
-            //    height: 440px;
-            vertical-align: middle;
-            object-fit: cover;
-            height: 60%;
-        }
-        .three {
-            // padding-top: 27px;
-            // max-height: 360px;
-            vertical-align: middle;
-            object-fit: cover;
-            height: 40%;
-        }
     }
 }
-@media screen and (max-width: 760px) and (min-width: 551px) {
-    .column-1 {
-        flex: 100%;
-        max-height: 467px;
-        max-width: 760px;
-        padding: 0 27px;
-        .one {
-            min-width: 440px;
-            max-height: 330px;
-            min-height: 0;
-            object-fit: cover;
-        }
-    }
-    .column-2 {
-        flex: 100%;
-        max-height: 467px;
-        padding: 0 27px;
-        margin-top: 27px;
-
-        .two {
-            // max-width: 440px;
-            min-height: 330px;
-            object-fit: cover;
-        }
-        .three {
-            // max-width: 440px;
-            min-height: 330px;
-            object-fit: cover;
-        }
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 550px) {
-    .column-1 {
-        flex: 100%;
-        max-height: 467px;
-        padding: 0 27px;
-        max-width: 550px;
-        .one {
-            // min-width: 440px;
-            max-height: 330px;
-            min-height: 0;
-            object-fit: cover;
-        }
-    }
-    .column-2 {
-        flex: 100%;
-        max-height: 467px;
-        padding: 0 27px;
-        margin-top: 27px;
-        .two {
-            // max-width: 440px;
-            min-height: 330px;
-            object-fit: cover;
-        }
-        .three {
-            // max-width: 440px;
-            min-height: 330px;
-            object-fit: cover;
-            // margin-top:27px;
-        }
-    }
-}
-
-// // https://tobiasahlin.com/blog/common-flexbox-patterns/
-// // https://dzone.com/articles/detail-beginner-guide-for-css-flexbox-with-example

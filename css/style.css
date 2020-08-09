@@ -1,210 +1,48 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
+  width: 100%;
+  height: 842px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column-1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 440px;
-  max-height: 800px;
-  padding-right: 27px;
-  position: relative;
-}
-
-.column-1 .one {
-  vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  padding-right: 27px;
-}
-
-.column-1 .one:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
-          box-shadow: inset 0 0 0 100vw rgba(21, 24, 45, 0.2);
-}
-
-@media screen and (min-width: 1024px) {
-  .column-1 .one {
-    min-height: -webkit-fill-available;
+@media screen and (min-width: 760px) {
+  .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
-.column-1 .one .text-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 19px;
+.column-1 {
+  -ms-flex-preferred-size: 494px;
+      flex-basis: 494px;
+  height: 842px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: min-content;
+      -ms-flex: min-content;
+          flex: min-content;
 }
 
-.column-1 .one .text-box:hover {
-  font-size: 21px;
-}
-
-.column-1 .transparent-box {
-  opacity: 0.5;
-  background: #ff5a46;
-  width: 94%;
-  height: 55%;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.column-1 .transparent-box:hover {
-  height: 100%;
-}
-
-.column-2 {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  max-width: 891px;
-  max-height: 800px;
-  margin: 0;
-}
-
-.column-2 .two {
-  max-height: 440px;
-  vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.column-2 .three {
-  padding-top: 27px;
-  max-height: 360px;
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 1024px) and (min-width: 761px) {
+@media screen and (min-width: 760px) {
   .column-1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 440px;
-    padding-right: 27px;
-    max-height: 800px;
-    min-height: 555px;
   }
-  .column-1 .one {
-    vertical-align: middle;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-  }
+}
+
+@media screen and (min-width: 760px) {
   .column-2 {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
-    max-width: 891px;
-    max-height: 800px;
-    margin: 0;
-  }
-  .column-2 .two {
-    vertical-align: middle;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 60%;
-  }
-  .column-2 .three {
-    vertical-align: middle;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 40%;
-  }
-}
-
-@media screen and (max-width: 760px) and (min-width: 551px) {
-  .column-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-height: 467px;
-    max-width: 760px;
-    padding: 0 27px;
-  }
-  .column-1 .one {
-    min-width: 440px;
-    max-height: 330px;
-    min-height: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .column-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    margin-top: 27px;
-  }
-  .column-2 .two {
-    min-height: 330px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .column-2 .three {
-    min-height: 330px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 550px) {
-  .column-1 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    max-width: 550px;
-  }
-  .column-1 .one {
-    max-height: 330px;
-    min-height: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .column-2 {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-height: 467px;
-    padding: 0 27px;
-    margin-top: 27px;
-  }
-  .column-2 .two {
-    min-height: 330px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .column-2 .three {
-    min-height: 330px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
