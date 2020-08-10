@@ -1,3 +1,16 @@
+*,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,44 +18,188 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 842px;
+}
+
+.row .column-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  margin: 10px;
+  position: relative;
+  background-size: cover;
+  height: 440px;
+  width: 100%;
 }
 
 @media screen and (min-width: 760px) {
-  .row {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .row .column-1 {
+    height: 610px;
+    margin: 10px 10px 0 10px;
   }
 }
 
-.column-1 {
-  -ms-flex-preferred-size: 494px;
-      flex-basis: 494px;
-  height: 842px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: min-content;
-      -ms-flex: min-content;
-          flex: min-content;
+@media screen and (min-width: 1024px) {
+  .row .column-1 {
+    height: 830px;
+  }
+}
+
+.row .column-1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  background-color: rgba(255, 90, 70, 0.6);
+}
+
+.row .column-1 .overlay:hover {
+  height: 100%;
+}
+
+.row .column-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 880px;
+}
+
+.row .column-2 .img-2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  margin: 0 10px;
+  position: relative;
+  background-size: cover;
+  height: 440px;
+  width: 100%;
+}
+
+.row .column-2 .img-2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  background-color: rgba(255, 90, 70, 0.6);
+}
+
+.row .column-2 .img-2 .overlay:hover {
+  height: 100%;
 }
 
 @media screen and (min-width: 760px) {
-  .column-1 {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+  .row .column-2 .img-2 .overlay {
+    width: 50%;
+    height: 100%;
+  }
+  .row .column-2 .img-2 .overlay:hover {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 760px) {
-  .column-2 {
+  .row .column-2 .img-2 {
+    height: 60%;
+    margin: 10px 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row .column-2 .img-2 {
+    height: 60%;
+  }
+}
+
+.row .column-2 .img-3 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  margin: 10px;
+  position: relative;
+  background-size: cover;
+  height: 430px;
+  width: 100%;
+}
+
+.row .column-2 .img-3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  background-color: rgba(255, 90, 70, 0.6);
+}
+
+.row .column-2 .img-3 .overlay:hover {
+  height: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .row .column-2 .img-3 .overlay {
+    right: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+  }
+  .row .column-2 .img-3 .overlay:hover {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .row .column-2 .img-3 {
+    height: 40%;
+    margin: 10px 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row .column-2 .img-3 {
+    height: 40%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .row .column-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+    height: 600px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row .column-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    height: 820px;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
