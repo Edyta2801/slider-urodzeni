@@ -626,32 +626,39 @@ html {
     }
 }
 .text-box {
-    position: absolute;
-    text-align: center;
+    // position: absolute;
+    text-align: left;
     margin-top: 30px;
     margin-left: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    line-height: 32px;
+    line-height: 20px;
     color: white;
     @include res(tab) {
-        text-align: left;
+        line-height: 32px;
     }
     .text-min {
         font-size: 12px;
     }
     .text-header {
-        font-size: 29px;
+        font-size: 20px;
         margin: 10px 0;
         &:hover {
             color: lightgrey;
             cursor: pointer;
         }
+        @include res(tab) {
+            font-size: 29px;
+        }
     }
     .text-list {
-        font-size: 19px;
+        font-size: 14px;
         &:hover {
             color: lightgrey;
             cursor: pointer;
+        }
+
+        @include res(tab) {
+            font-size: 19px;
         }
     }
 }

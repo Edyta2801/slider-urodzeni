@@ -211,18 +211,17 @@ html {
 }
 
 .text-box {
-  position: absolute;
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
   margin-left: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 32px;
+  line-height: 20px;
   color: white;
 }
 
 @media screen and (min-width: 760px) {
   .text-box {
-    text-align: left;
+    line-height: 32px;
   }
 }
 
@@ -231,7 +230,7 @@ html {
 }
 
 .text-box .text-header {
-  font-size: 29px;
+  font-size: 20px;
   margin: 10px 0;
 }
 
@@ -240,12 +239,24 @@ html {
   cursor: pointer;
 }
 
+@media screen and (min-width: 760px) {
+  .text-box .text-header {
+    font-size: 29px;
+  }
+}
+
 .text-box .text-list {
-  font-size: 19px;
+  font-size: 14px;
 }
 
 .text-box .text-list:hover {
   color: lightgrey;
   cursor: pointer;
+}
+
+@media screen and (min-width: 760px) {
+  .text-box .text-list {
+    font-size: 19px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
