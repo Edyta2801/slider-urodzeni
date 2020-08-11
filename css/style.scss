@@ -601,13 +601,14 @@ html {
                         left: 0;
                     }
                 }
-                .text-box{
+                .text-box {
                     @include res(tab) {
-                    text-align:right;
-                    margin-right:20px;
-                }}
+                        text-align:right;
+                        margin-right: 20px;
+                    }
+                }
             }
-            
+
             @include res(tab) {
                 height: 40%;
                 margin: 10px 10px 0 0;
