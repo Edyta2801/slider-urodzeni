@@ -459,7 +459,9 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
+img {
+    object-fit: cover;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -472,9 +474,10 @@ html {
         color: white;
         margin: 10px;
         position: relative;
-        background-size: cover;
+
         height: 440px;
         width: 100%;
+
         @include res(tab) {
             height: 610px;
             margin: 10px 10px 0 10px;
@@ -603,7 +606,7 @@ html {
                 }
                 .text-box {
                     @include res(tab) {
-                        text-align:right;
+                        text-align: right;
                         margin-right: 20px;
                     }
                 }

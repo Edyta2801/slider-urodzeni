@@ -11,6 +11,11 @@ html {
           box-sizing: inherit;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +36,6 @@ html {
   color: white;
   margin: 10px;
   position: relative;
-  background-size: cover;
   height: 440px;
   width: 100%;
 }
