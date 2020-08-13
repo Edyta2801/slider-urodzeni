@@ -615,7 +615,7 @@ img {
 
             @include res(tab) {
                 height: 40%;
-                margin: 10px 10px 0 0;
+                margin: 10px 10px 10px 0;
             }
 
             @include res(desktop) {
